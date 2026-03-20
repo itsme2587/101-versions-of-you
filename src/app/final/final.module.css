@@ -1,0 +1,86 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-bg);
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 3.5rem;
+}
+
+.title {
+  font-size: 3rem;
+  color: var(--color-text);
+  margin: 0 0 1rem 0;
+  letter-spacing: 0.02em;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  color: var(--color-accent);
+  font-style: italic;
+  font-weight: 300;
+  margin: 0;
+}
+
+.divider {
+  width: 60px;
+  height: 1px;
+  background-color: var(--color-border);
+  margin: 2.5rem auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.note {
+  font-size: 1.2rem;
+  color: var(--color-text);
+  line-height: 1.9;
+  font-weight: 300;
+  text-align: left;
+}
+
+.note p {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.note p:last-child {
+  margin-bottom: 0;
+}
+
+.videoWrapper {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px -10px rgba(0,0,0,0.1);
+}
+
+.videoPlayer {
+  width: 100%;
+  display: block;
+}
+
+.buttonWrapper {
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .title { font-size: 4rem; }
+  .subtitle { font-size: 1.6rem; }
+  .note { font-size: 1.3rem; }
+}

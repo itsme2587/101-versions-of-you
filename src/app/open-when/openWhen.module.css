@@ -1,0 +1,81 @@
+.main {
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  padding: 40px 20px 80px 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+  transition: color 0.3s ease;
+  padding: 8px 0;
+}
+
+.backButton:hover {
+  color: var(--color-text);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.title {
+  font-size: 2.8rem;
+  color: var(--color-text);
+  margin: 0 0 0.8rem 0;
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  color: var(--color-text-muted);
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: var(--color-accent-soft);
+  border: 1px solid transparent;
+  padding: 40px 32px;
+  border-radius: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  background-color: var(--color-surface);
+  border-color: var(--color-accent);
+  box-shadow: 0 10px 40px -10px rgba(0,0,0,0.05);
+}
+
+.cardTitle {
+  font-size: 1.6rem;
+  color: var(--color-text);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

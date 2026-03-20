@@ -1,0 +1,77 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.backdrop {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at center, var(--color-accent-soft) 0%, transparent 60%);
+  opacity: 0.4;
+  z-index: 0;
+  animation: pulse 8s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.3; }
+  100% { transform: scale(1.1); opacity: 0.5; }
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  padding: 24px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+}
+
+.title {
+  font-size: 2.8rem;
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1.6rem;
+  color: var(--color-accent);
+  margin-top: 0.5rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.divider {
+  width: 40px;
+  height: 1px;
+  background-color: var(--color-border);
+  margin: 2.5rem 0;
+}
+
+.text {
+  font-size: 1.15rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  font-weight: 300;
+  margin-bottom: 3.5rem;
+}
+
+.buttonWrapper {
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .title { font-size: 3.4rem; }
+  .subtitle { font-size: 2rem; }
+  .text { font-size: 1.25rem; }
+}

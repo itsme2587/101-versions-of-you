@@ -1,0 +1,150 @@
+.main {
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  padding-top: 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--color-text);
+  margin: 0 0 0.8rem 0;
+}
+
+.progress {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  margin: 0;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-bottom: 60px;
+}
+
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: 36px 32px;
+  border-radius: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.015);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+
+.card:hover {
+  box-shadow: 0 12px 40px -10px rgba(0,0,0,0.06);
+  border-color: var(--color-accent);
+}
+
+.cardTitle {
+  font-size: 1.6rem;
+  color: var(--color-text);
+  margin: 0 0 0.5rem 0;
+}
+
+.cardSubtitle {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  margin: 0;
+  line-height: 1.5;
+  font-weight: 300;
+  padding-right: 20px;
+}
+
+.viewed {
+  opacity: 0.75;
+}
+
+.statusBadge {
+  position: absolute;
+  top: 36px;
+  right: 32px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  background-color: var(--color-accent-soft);
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.cardAccent {
+  background-color: var(--color-accent-soft);
+  border-color: transparent;
+  margin-top: 2rem;
+}
+
+.cardAccent:hover {
+  border-color: rgba(0,0,0,0.1);
+}
+
+.cardFinal {
+  background-color: transparent;
+  border: 1px dashed var(--color-border);
+  text-align: center;
+  padding: 60px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.cardFinal.locked {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.cardFinal.locked:hover {
+  box-shadow: none;
+  border-color: var(--color-border);
+}
+
+.lockIcon {
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.lockText {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .cardAccent, .cardFinal {
+    grid-column: 1 / -1;
+  }
+  .header {
+    padding-top: 3rem;
+  }
+  .title {
+    font-size: 3rem;
+  }
+}
