@@ -34,7 +34,7 @@ export default function HomeGallery() {
               animate={{ opacity: 1, y: 0 }} 
               className={`serif ${styles.title}`}
             >
-              Gallery
+              Version I
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0 }} 
@@ -60,6 +60,9 @@ export default function HomeGallery() {
                   whileHover={{ y: -4 }}
                   whileTap={{ scale: 0.98 }}
                 >
+                  <span style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', opacity: 0.6, display: 'block', marginBottom: '0.5rem' }}>
+                    Chapter {idx + 1}
+                  </span>
                   <h2 className={`serif ${styles.cardTitle}`}>{section.title}</h2>
                   <p className={styles.cardSubtitle}>{section.subtitle}</p>
                   {isViewed && <span className={styles.statusBadge}>Read</span>}
@@ -96,8 +99,8 @@ export default function HomeGallery() {
               <div className={styles.lockIcon}>
                 {allViewed ? <Unlock size={24} /> : <Lock size={24} />}
               </div>
-              <h2 className={`serif ${styles.cardTitle}`}>Version 101</h2>
-              <p className={styles.cardSubtitle}>The woman you are still becoming.</p>
+              <h2 className={`serif ${styles.cardTitle}`}>{AppData.finalLetter.title}</h2>
+              <p className={styles.cardSubtitle}>{AppData.finalLetter.subtitle}</p>
               {!allViewed && <p className={styles.lockText}>Unlocks after reading all chapters</p>}
             </motion.div>
           </div>

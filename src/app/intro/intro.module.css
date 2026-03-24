@@ -37,33 +37,38 @@
 }
 
 .title {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   color: var(--color-text);
   margin: 0;
-  line-height: 1.2;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
 }
 
 .subtitle {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: var(--color-accent);
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   font-style: italic;
   font-weight: 300;
+  letter-spacing: 0.05em;
 }
 
 .divider {
-  width: 40px;
-  height: 1px;
-  background-color: var(--color-border);
-  margin: 2.5rem 0;
+  width: 1px;
+  height: 60px;
+  background-color: var(--color-text);
+  opacity: 0.15;
+  margin: 3.5rem 0;
+  transform-origin: top center;
 }
 
 .text {
   font-size: 1.15rem;
   color: var(--color-text-muted);
-  line-height: 1.8;
+  line-height: 2;
   font-weight: 300;
-  margin-bottom: 3.5rem;
+  margin-bottom: 4rem;
+  letter-spacing: 0.02em;
 }
 
 .buttonWrapper {
@@ -71,7 +76,8 @@
 }
 
 @media (min-width: 768px) {
-  .title { font-size: 3.4rem; }
-  .subtitle { font-size: 2rem; }
-  .text { font-size: 1.25rem; }
+  .title { font-size: 4rem; }
+  .subtitle { font-size: 2.2rem; }
+  .text { font-size: 1.3rem; }
+  .divider { height: 80px; margin: 4.5rem 0; }
 }

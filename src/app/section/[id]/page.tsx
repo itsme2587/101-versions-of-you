@@ -58,9 +58,9 @@ export default function SectionDetail() {
 
           <motion.div 
             className={styles.header}
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1, duration: 0.8 }}
+            transition={{ delay: 0.2, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
           >
             <h1 className={`serif ${styles.title}`}>{section.title}</h1>
             {section.subtitle && <p className={styles.subtitle}>{section.subtitle}</p>}

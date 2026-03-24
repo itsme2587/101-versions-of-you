@@ -3,60 +3,82 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-bg);
+  background-color: #080707; /* Deepest black with a hint of warmth */
+  color: #F8F6F0; /* Soft pearl text */
   padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.backdrop {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at center, rgba(194, 161, 128, 0.08) 0%, transparent 70%);
+  animation: pulse 10s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.5; }
+  100% { transform: scale(1.1); opacity: 0.8; }
 }
 
 .container {
   max-width: 640px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .header {
-  margin-bottom: 3.5rem;
+  margin-bottom: 4rem;
 }
 
 .title {
-  font-size: 3rem;
-  color: var(--color-text);
-  margin: 0 0 1rem 0;
-  letter-spacing: 0.02em;
+  font-size: 3.5rem;
+  color: #F8F6F0;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
 }
 
 .subtitle {
-  font-size: 1.4rem;
-  color: var(--color-accent);
+  font-size: 1.6rem;
+  color: #C2A180; /* Burnished gold */
   font-style: italic;
   font-weight: 300;
   margin: 0;
+  letter-spacing: 0.05em;
 }
 
 .divider {
-  width: 60px;
-  height: 1px;
-  background-color: var(--color-border);
-  margin: 2.5rem auto;
+  width: 1px;
+  height: 80px;
+  background-color: #C2A180;
+  opacity: 0.3;
+  margin: 3.5rem auto;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 3.5rem;
   align-items: center;
 }
 
 .note {
-  font-size: 1.2rem;
-  color: var(--color-text);
-  line-height: 1.9;
+  font-size: 1.25rem;
+  color: #E0DDD7;
+  line-height: 2.2;
   font-weight: 300;
-  text-align: left;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .note p {
   margin-top: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .note p:last-child {

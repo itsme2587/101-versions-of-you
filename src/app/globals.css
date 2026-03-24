@@ -1,27 +1,35 @@
 @import "tailwindcss";
 
 :root {
-  --color-bg: #FCFAF8; /* Ivory */
-  --color-text: #2A2A2A; /* Deep charcoal */
-  --color-text-muted: #6B6560; /* Warm gray */
-  --color-accent: #D4B89A; /* Champagne */
-  --color-accent-soft: #F1E5D6;
+  /* Ivory/Pearl Base */
+  --color-bg: #FAF9F6; 
+  /* Deep Anthracite */
+  --color-text: #1C1C19; 
+  /* Warm Taupe */
+  --color-text-muted: #6B6862; 
+  /* Champagne Gold */
+  --color-accent: #D4B89A; 
+  --color-accent-soft: #F4EBE0;
   --color-surface: #FFFFFF;
-  --color-border: #E8E3DF;
+  --color-border: #E8E5DF;
   
-  --font-serif: var(--font-playfair);
+  --font-serif: var(--font-serif);
   --font-sans: var(--font-inter);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #141312; /* Very deep warm gray */
-    --color-text: #F1EFEA;
-    --color-text-muted: #9E9892;
-    --color-surface: #1E1D1B;
-    --color-border: #3A3633;
-    --color-accent: #C4A587;
-    --color-accent-soft: #38312A;
+    /* Obsidian Warm */
+    --color-bg: #0C0C0B; 
+    /* Soft Pearl */
+    --color-text: #F2EFE9;
+    /* Ash Taupe */
+    --color-text-muted: #8C8882;
+    --color-surface: #141413;
+    --color-border: #2C2A28;
+    /* Burnished Gold */
+    --color-accent: #C2A180;
+    --color-accent-soft: #2A251F;
   }
 }
 
@@ -32,14 +40,14 @@ html, body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  transition: background-color 0.8s ease, color 0.8s ease;
+  transition: background-color 1.2s cubic-bezier(0.22, 1, 0.36, 1), color 1.2s cubic-bezier(0.22, 1, 0.36, 1);
   min-height: 100vh;
 }
 
 h1, h2, h3, h4, .serif {
   font-family: var(--font-serif), serif;
-  font-weight: 400;
-  letter-spacing: -0.02em;
+  font-weight: 300;
+  letter-spacing: -0.01em;
 }
 
 * {
@@ -47,28 +55,37 @@ h1, h2, h3, h4, .serif {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 640px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
 .fade-in {
-  animation: fadeIn 1.2s ease forwards;
+  animation: fadeIn 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
+  from { opacity: 0; transform: translateY(15px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Utility to ensure the soft shadow fits the premium vibe */
+/* Luxurious soft shadow with wide spread and low opacity */
 .soft-shadow {
-  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 20px 60px -15px rgba(0, 0, 0, 0.04), 0 10px 20px -10px rgba(0, 0, 0, 0.02);
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.soft-shadow:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 30px 70px -15px rgba(0, 0, 0, 0.06), 0 15px 30px -10px rgba(0, 0, 0, 0.03);
 }
 
 @media (prefers-color-scheme: dark) {
   .soft-shadow {
-    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 20px 60px -15px rgba(0, 0, 0, 0.6), 0 10px 20px -10px rgba(0, 0, 0, 0.4);
+  }
+  .soft-shadow:hover {
+    box-shadow: 0 30px 70px -15px rgba(0, 0, 0, 0.8), 0 15px 30px -10px rgba(0, 0, 0, 0.5);
   }
 }
 
