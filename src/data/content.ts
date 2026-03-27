@@ -38,7 +38,7 @@ export const AppData: ContentData = {
       note: "I don’t think you even realise how strong you are.\nI’ve seen you handle things that would have broken me in half… and still show up like nothing happened.\n\nYou take care of everything — work, home, people — and somehow still find the energy to ask me if I’ve eaten.\n\nAnd the funny part is… you never call it strength.\nBut I see it. Every single day.\n\nI don’t say this enough, but I’m really, really proud of you.",
       quote: "You carry more than you admit… and still make it look easy.",
       images: [],
-      audio: "",
+      audio: "../audio/strong.mp3",
     },
     {
       id: "soft",
@@ -47,6 +47,7 @@ export const AppData: ContentData = {
       note: "The world gets to see your strong side.\nBut I get to see the version of you that lets your guard down.\n\nThe way your voice softens… the way you just sit quietly sometimes…\nthose little moments are my favourite.\n\nIt feels like I’m trusted with something rare.\nAnd I don’t take that lightly.\n\nHonestly, this version of you… is my home.",
       quote: "The world sees your strength. I get to feel your softness.",
       images: [],
+      audio: "../audio/soft.mp3",
     },
     {
       id: "funny",
@@ -55,6 +56,7 @@ export const AppData: ContentData = {
       note: "You don’t even try… and still manage to make me laugh.\n\nSometimes it’s the way you say things, sometimes it’s your expressions…\nand sometimes it’s you laughing at your own joke before finishing it 😄\n\nYou make ordinary moments feel fun.\nAnd somehow, even the worst days feel lighter when you’re around.\n\nI don’t think you realise this…\nbut you’re my favourite kind of happy.",
       quote: "Your laughter is still my favourite sound.",
       images: [],
+      audio: "../audio/funny.mp3",
     },
     {
       id: "caring",
@@ -63,6 +65,7 @@ export const AppData: ContentData = {
       note: "You notice things… that most people miss.\n\nThe small details. The little changes. The things I don’t even say out loud.\nAnd somehow, you always know.\n\nYou remember what matters.\nYou care in ways that aren’t loud, but mean everything.\n\nI’ve never felt more understood than I do with you.\nAnd that’s something I’ll never take for granted.",
       quote: "You care in ways the world doesn’t even notice… but I do.",
       images: [],
+      audio: "../audio/caring.mp3",
     },
     {
       id: "beautiful",
@@ -71,6 +74,7 @@ export const AppData: ContentData = {
       note: "Yes, you’re beautiful. That’s obvious.\n\nBut what gets me every time… is how you are.\nThe way you carry yourself, the way you smile, the way your eyes change when you’re excited.\n\nIt’s not just how you look.\nIt’s the feeling you bring with you.\n\nAnd honestly… I still catch myself just looking at you sometimes, thinking\n“how did I get this lucky?”",
       quote: "It’s not just how you look… it’s how you make everything feel.",
       images: [],
+      audio: "../audio/beautiful.mp3",
     },
     {
       id: "dreamer",
@@ -79,6 +83,7 @@ export const AppData: ContentData = {
       note: "I love listening to you talk about what you want in life.\n\nThere’s something about the way your eyes light up…\nlike you’re already halfway there.\n\nYou dream big. And you should.\nBecause if anyone can turn those dreams into reality, it’s you.\n\nAnd whatever you choose to go after…\nI’ll always be right there, quietly supporting you.",
       quote: "Your dreams don’t scare me. They make me believe in you more.",
       images: [],
+      audio: "../audio/dreamer.mp3",
     },
     {
       id: "chaotic",
@@ -87,6 +92,7 @@ export const AppData: ContentData = {
       note: "You’re not always calm.\nYou overthink. You get restless. You get messy sometimes.\n\nAnd honestly… I love that.\n\nBecause that’s the most real version of you.\nNot perfect. Not filtered. Just… you.\n\nEven in your chaos, there’s something beautiful.\nSomething alive.\n\nAnd I wouldn’t change that for anything.",
       quote: "I don’t just love your calm… I love your chaos too.",
       images: [],
+      audio: "../audio/chaotic.mp3",
     },
     {
       id: "quiet",
@@ -95,6 +101,7 @@ export const AppData: ContentData = {
       note: "Some of my favourite moments with you… are the quiet ones.\n\nNo talking. No plans. Just sitting next to you.\n\nThere’s something about your presence that just… settles everything in me.\nLike I don’t have to think too much. I can just be.\n\nYou’re my calm in a very noisy world.",
       quote: "With you, even silence feels full.",
       images: [],
+      audio: "../audio/quiet.mp3",
     },
     {
       id: "us",
@@ -112,6 +119,7 @@ export const AppData: ContentData = {
       note: "When you care about something… you really care.\n\nThe way you give your time, your energy, your focus —\nit’s honestly inspiring to watch.\n\nYou don’t do things halfway.\nAnd that’s one of the things I admire most about you.\n\nYou bring intensity into everything you love.\nAnd somehow, that makes everything feel more alive.",
       quote: "You don’t just feel things… you feel them deeply.",
       images: [],
+      audio: "../audio/passionate.mp3",
     }
   ],
   openWhen: [
