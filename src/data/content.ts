@@ -127,13 +127,13 @@ export const AppData: ContentData = {
       id: "need-me",
       title: "Open When You Need Me",
       note: "Hey… just pause for a second.\n\nYou don’t have to handle everything alone.\nYou don’t always have to be strong.\n\nIt’s okay to feel tired.\nIt’s okay to slow down.\n\nAnd whenever you feel like it’s getting too much…\njust remember, I’m right here. Always.",
-      images: [],
+      images: ["../image/need_me.jpeg"],
     },
     {
       id: "want-smile",
       title: "Open When You Want To Smile",
       note: "You know what I was just thinking?\n\nThat smile of yours… the one that just appears randomly —\nyeah, that one.\n\nIt’s still my favourite thing.\n\nAnd no matter what’s going on right now…\nI promise you, things will be okay.\n\nAlso… I’m probably missing you a little right now 🙂",
-      images: [],
+      images: ["../image/smile.jpeg"],
     }
   ],
   get finalLetter() {
