@@ -115,7 +115,7 @@ export default function SectionDetail() {
 
             {section.audio && (
               <div className={styles.audioWrapper}>
-                <audio controls src={section.audio} className={styles.audioPlayer} />
+                <audio controls autoPlay src={section.audio} className={styles.audioPlayer} />
               </div>
             )}
           </motion.div>
