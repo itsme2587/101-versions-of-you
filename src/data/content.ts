@@ -145,7 +145,7 @@ export const AppData: ContentData = {
     return {
       title: `Version ${nextVersionRoman}`,
       subtitle: "The woman you are still becoming.",
-      note: `I’ve already fallen in love with every version of you I’ve been lucky enough to see so far.\n\nBut what excites me even more… is knowing that there are so many more versions of you still waiting to unfold.\n\nThe way you grow, the way you change, the way you keep becoming better without even realising it — I notice all of it.\n\nAnd I know one thing for sure… I’m going to love every version of you that comes next, just as much, if not more.\n\nHappy ${AppConfig.birthdayAge}th Birthday ❤️\n\nTake your time becoming everything you’re meant to be… I’ll be right here, loving you through it all.`,
+      note: `I’ve already fallen in love with every version of you I’ve been lucky enough to see so far.\n\nBut what excites me even more… is knowing that there are so many more versions of you still waiting to unfold.\n\nThe way you grow, the way you change, the way you keep becoming better without even realising it — I notice all of it.\n\nAnd I know one thing for sure… I’m going to love every version of you that comes next, just as much, if not more.\n\nHappy ${AppConfig.birthdayAge}th Birthday ❤️\n\nTake your time becoming everything you’re meant to be… I’ll be right here, loving you through it all.\n\nVersion ${nextVersionRoman} will unlock on your next birthday. I can't wait to fall in love with her, too.`,
       video: ""
     };
   }
